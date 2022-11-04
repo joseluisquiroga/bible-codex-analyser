@@ -1,0 +1,42 @@
+
+
+mkdir output
+
+F_STNG=BIBLE_CODEX_DB/BIBLE_IN_STRONG_VERSES.table
+F_KJV=BIBLE_TRANSLATIONS/BIB_KJV.txt
+
+F_TMP1=output/tmp_G166_aionios_eternal_and_G2288_thanatos_death
+F_TMP2=output/tmp_KJV_G166_aionios_eternal_and_G2288_thanatos_death
+
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "====== strong code G_2288 == thanatos == death == muerte =================="
+echo "====== strong code G_166 == aionios == eternal == eterna =================="
+echo "====== ALL verses with G_2288 and G_166 in BIBLE_IN_STRONG_VERSES.table ==="
+echo "==========================================================================="
+grep G_2288 $F_STNG | grep G_166 > $F_TMP1
+cat $F_TMP1
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "Number of verses - Number of words - Number of characters"
+echo "==========================================================================="
+wc $F_TMP1
+
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "======= Same verses printed from BIBLE_TRANSLATIONS/BIB_KJV.txt ==========="
+echo "==========================================================================="
+print_verses $F_TMP1 $F_KJV > $F_TMP2
+cat $F_TMP2
+
+
+

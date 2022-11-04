@@ -1,0 +1,65 @@
+
+
+mkdir output
+
+F_STNG=BIBLE_CODEX_DB/BIBLE_IN_STRONG_VERSES.table
+F_KJV=BIBLE_TRANSLATIONS/BIB_KJV.txt
+
+F_TMP1=output/tmp_G2222_zoe_life_G166_aionios_eternal_sentence
+F_TMP2=output/tmp_KJV_G2222_zoe_life_G166_aionios_eternal_sentence
+
+F_TMP3=output/tmp_G166_aionios_eternal_G2222_zoe_life_sentence
+F_TMP4=output/tmp_KJV_G166_aionios_eternal_G2222_zoe_life_sentence
+
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "====== strong code G_2222 == zoe == life == vida =========================="
+echo "====== strong code G_166 == aionios == eternal == eterna =================="
+echo "== verses with G_2222 followed by G_166 in BIBLE_IN_STRONG_VERSES.table ==="
+echo "==========================================================================="
+grep "G_2222:G_166" $F_STNG > $F_TMP1
+cat $F_TMP1
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "Number of verses - Number of words - Number of characters"
+echo "==========================================================================="
+wc $F_TMP1
+
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "== verses with G_166 followed by G_2222 in BIBLE_IN_STRONG_VERSES.table ==="
+echo "==========================================================================="
+grep "G_166:G_2222" $F_STNG > $F_TMP3
+cat $F_TMP3
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "Number of verses - Number of words - Number of characters"
+echo "==========================================================================="
+wc $F_TMP3
+
+
+echo ""
+echo ""
+echo ""
+echo "==========================================================================="
+echo "======= Same verses printed from BIBLE_TRANSLATIONS/BIB_KJV.txt ==========="
+echo "==========================================================================="
+print_verses $F_TMP1 $F_KJV > $F_TMP2
+print_verses $F_TMP3 $F_KJV > $F_TMP4
+cat $F_TMP2
+cat $F_TMP4
+
+
+
