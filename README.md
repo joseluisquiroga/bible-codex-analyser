@@ -101,7 +101,8 @@ Steps done by those examples:
 3. Search the verses that contain those Strong Codes in BIBLE_IN_STRONG_VERSES.table
 4. Write the those verses in your prefered language.
 
-**This simple technique allows to study the bible in its FIRST written languages, hebrew and greek, as it was written, and NOT as it was translated.**
+**This simple technique allows to study the bible in its FIRST written languages, hebrew and greek, as it was written, and NOT as it was translated, which allows to make reliable bible analysis, reliable language statistics, and avoid that the very important 0.5% or less of the bible that is being interpreted by a majority of western denominations under the influence of Satan ends up changing the 100% of the SALVATION message**
+
 
 
 
